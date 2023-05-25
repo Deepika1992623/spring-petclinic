@@ -61,15 +61,15 @@ sh 'docker rmi Deepika/pipeline-1-java:$image_tag'
 }
 
 
-post {
+//post {
 
-always {
+//always {
 // Archive artifacts
-archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
+//archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
 
 // Test reports
-junit '**/target/surefire-reports/*.xml'
-}
-}
+//junit '**/target/surefire-reports/*.xml'
+//}
+//}
 }
 }
