@@ -33,13 +33,13 @@ sh 'mvn deploy'
 stage('Docker Build') {
 steps {
 // Build Docker image
-sh 'docker build -t Deepika/pipeline-1-java:$image_tag .'
+sh 'docker build -t deepika1993/spring-jenkin:v1 .'
 
 // Push the Docker image to the registry
-sh 'cd docker push Deepika/pipeline-1-java:$image_tag'
+sh 'cd docker push deepika1993/spring-jenkin:v1'
 
 // Run the docker container
-sh 'docker run --name maven-build -d Deepika/pipeline-1-java:$image_tag'
+sh 'docker run --name maven-build -d deepika1993/spring-jenkin:v1'
 
 sh 'sleep 20'
 sh 'docker ps'
@@ -56,7 +56,7 @@ sh 'docker stop maven-build'
 sh 'docker rm maven-build'
 
 // Deleting docker image
-sh 'docker rmi Deepika/pipeline-1-java:$image_tag'
+sh 'docker rmi deepika1993/spring-jenkin:v1'
 }
 }
 
