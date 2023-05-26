@@ -203,14 +203,14 @@
 
   <distributionManagement>
 		<repository>
-			<id>sprint-clinic-release</id>
-			<name>sprint-clinic-release</name>
-			<url>http://localhost:8081/repository/sprint-clinic-release/</url>
+			<id>Spring-petclinic-Release</id>
+			<name>Spring-petclinic-Release</name>
+			<url>http://localhost:8081/repository/Spring-petclinic-Release/</url>
 		</repository>
 		<snapshotRepository>
-			<id>Sprint-clinic-snapshot</id>
-			<name>Sprint-clinic-snapshot</name>
-			<url>http://localhost:8081/repository/Sprint-clinic-snapshot/</url>
+			<id>Spring-petclinic-Snapshot</id>
+			<name>Spring-petclinic-Snapshot</name>
+			<url>http://localhost:8081/repository/Spring-petclinic-Snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
